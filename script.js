@@ -21,16 +21,6 @@ function countWords() {
     inputText.innerHTML = highlighted;
 
 }
-function removeHighlights() {
-   
-    const textContainer = document.getElementById('inputText');
-    const spans = textContainer.querySelectorAll('#longestWord');
-    spans.forEach(span => {
-      span.outerHTML = span.innerHTML;
-    });
-    
-  }
-  
   function findLongestWord(words) {
     var longestWord = words[0];
     for (var i = 1; i < words.length; i++) {
@@ -39,11 +29,4 @@ function removeHighlights() {
     }
     return longestWord;
 }
-// function highlightText(words){
-//     var longestword = findLongestWord(words);
-//     const regex = new RegExp(longestword,'g');
-//      const highlighted = document.getElementById("inputText").textContent.replace(regex, `<span id="longestWord"> ${regex} </span>`);
-//      console.log(highlighted);
-//      inputText.innerHTML = highlighted;
-// }
    
